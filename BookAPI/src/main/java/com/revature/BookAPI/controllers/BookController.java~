@@ -21,8 +21,16 @@ public class BookController {
                 "The Taming of the Shrew", "The Shining", "The Very Hungry Caterpillar"};
 
         return ResponseEntity.ok(books);
-
     }
 
+
+    //Method that sends an HTTP request to another API to get book recommendations
+    @GetMapping("/recs")
+    public ResponseEntity<String[]> getBookRecs() {
+
+        //using RestTemplate to send an HTTP Request to another API
+        
+
+    }
 
 }
